@@ -1,3 +1,1 @@
-Git is a distributed version control system
-Git diff 
-git checkout -- file
+learn git
