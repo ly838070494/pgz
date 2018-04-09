@@ -1,0 +1,7 @@
+mkdir git --创建目录git
+cd git --进入目录
+pwd --查看目录
+git init --创建git仓库
+git add read.txt --添加read.txt到暂存区
+git commit -m "add read file" --提交read.txt到版本库
+git status 
