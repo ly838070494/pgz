@@ -4,4 +4,10 @@ pwd --查看目录
 git init --创建git仓库
 git add read.txt --添加read.txt到暂存区
 git commit -m "add read file" --提交read.txt到版本库
-git status 
+git status --查看文件状态
+git log --查看版本记录
+git reflog --查看操作记录
+git reset --hard commit_id --回退到某个版本
+git diff gitcommand.txt --工作区和版本库文件做比较
+git diff HEAD gitcommand.txt --工作区和主分支文件做比较
+git diff --cached gitcommand.txt --暂存区和版本库文件做比较
