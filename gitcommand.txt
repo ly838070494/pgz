@@ -43,3 +43,12 @@ git merge --no-ff -m "merge with no-ff" dev --默认Fast froward 删除分支后
 
 --保存工作现场
 git stash
+--查看stash
+git stash list
+
+--恢复stash
+git stash apply stash@{1}
+--删除stash
+git stash drop stash@{1}
+--等价于
+git stash pop
