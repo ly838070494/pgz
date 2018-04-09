@@ -15,3 +15,18 @@ git diff commit_id gitcommand.txt --和某个版本的文件进行比较
 
 git rm test.txt --删除文件
 git commit -m "rm test.txt" --提交删除操作，删除版本库文件
+
+git remote add origin git@github.com:ly838070494/pgz.git --关联远程仓库
+git push -u origin master --首次推送本地内容到远程
+git push origin master --平时推送操作
+
+git clone git@github.com:ly838070494/py.git --从远程库克隆到本地
+
+--分支管理
+
+git checkout -b dev --创建并切换到dev分支
+--等价于
+git branch dev --创建dev分支
+git chekout dev --切换到dev分支
+
+git branch --查看当前分支
