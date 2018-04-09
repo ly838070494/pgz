@@ -37,6 +37,8 @@ git merge dev --合并dev分支到master分支
 git branch -d dev --删除dev分支
 ----保留分支信息
 git merge --no-ff -m "merge with no-ff" dev --默认Fast froward 删除分支后，分支消息会丢失
+--强制删除没有合并的分支
+git branch -D dev --强制删除dev分支
 
 --解决冲突
 手动合并文件，然后git add file,git commit
@@ -52,3 +54,22 @@ git stash apply stash@{1}
 git stash drop stash@{1}
 --等价于
 git stash pop
+
+--查看远程库信息
+git remote
+git remote -v --详细信息
+
+--多人协作
+git push origin dev --推送dev分支到远程库
+git pull --同步别人的修改,从远程分支抓取
+git branch -b branch-name origin/branch-name --本地创建和远程分支对应的分支
+git branch --set-upstream branch-name origin/branch-name --建立本地分支和远程分支的关联
+
+--创建标签
+git tag tag-name
+git tag --查看标签信息
+git tag tag-name commit_id --给某个版本打标签
+git show tag-name --根据名称查看标签
+
+
+
