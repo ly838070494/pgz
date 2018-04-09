@@ -11,3 +11,4 @@ git reset --hard commit_id --回退到某个版本
 git diff gitcommand.txt --工作区和版本库文件做比较
 git diff HEAD gitcommand.txt --工作区和主分支文件做比较
 git diff --cached gitcommand.txt --暂存区和版本库文件做比较
+git diff commit_id gitcommand.txt --和某个版本的文件进行比较
