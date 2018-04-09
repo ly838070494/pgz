@@ -17,16 +17,29 @@ git rm test.txt --删除文件
 git commit -m "rm test.txt" --提交删除操作，删除版本库文件
 
 git remote add origin git@github.com:ly838070494/pgz.git --关联远程仓库
-git push -u origin master --首次推送本地内容到远程
+git push -u origin master --首次推送本地内容到远程仓库
 git push origin master --平时推送操作
 
 git clone git@github.com:ly838070494/py.git --从远程库克隆到本地
 
 --分支管理
-
+----创建分支
 git checkout -b dev --创建并切换到dev分支
---等价于
+-----等价于
 git branch dev --创建dev分支
 git chekout dev --切换到dev分支
 
 git branch --查看当前分支
+----合并分支
+git checkout master --切换到主分支
+git merge dev --合并dev分支到master分支
+----删除分支
+git branch -d dev --删除dev分支
+----保留分支信息
+git merge --no-ff -m "merge with no-ff" dev --默认Fast froward 删除分支后，分支消息会丢失
+
+--解决冲突
+手动合并文件，然后git add file,git commit
+
+--保存工作现场
+git stash
